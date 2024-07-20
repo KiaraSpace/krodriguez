@@ -1,0 +1,619 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f;
+    color: #ccd6f6;
+}
+
+a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a192f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilos para el menú de navegación */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a192f;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #64ffda;
+}
+
+.menu-toggle {
+    display: none; /* Oculta el icono de menú por defecto */
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ccd6f6;
+    margin: 5px 0;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px 0;
+}
+
+h1, h2, h3 {
+    color: #ccd6f6;
+}
+
+/* Estilos específicos */
+.section {
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #64ffda;
+}
+
+.hero h2 {
+    margin: 10px 0;
+    font-size: 60px;
+    color: #ccd6f6;
+}
+
+.hero h3 {
+    margin: 10px 0;
+    font-size: 50px;
+    color: #8892b0;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-title::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #64ffda;
+    margin-right: 15px;
+}
+
+.skills, .projects, .star, .contact {
+    margin-bottom: 100px;
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+    text-align: left;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    display: flex;
+    margin: 20px 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ccd6f6;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #64ffda;
+}
+
+.social-links i {
+    font-size: 24px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover i {
+    transform: scale(1.1);
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.skill-card p {
+    margin-top: 0;
+    color: #525151;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-card .skill-icon {
+    width: 35px;
+    height: auto;
+}
+
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
+
+.project-card {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #101c2d;
+    border-radius: 12px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+}
+
+.project-content h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #ccd6f6;
+}
+
+.project-content p {
+    color: #8892b0;
+    line-height: 1.5;
+}
+
+/* Estilos para las tarjetas de logro */
+.star-card {
+    background-color: #101c2d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+}
+
+.star-card:hover {
+    transform: translateY(-5px);
+}
+
+.star-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.star-content img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.star-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+.star-content h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ccd6f6;
+    font-size: 20px;
+    text-align: left;
+}
+
+.star-content h3 a {
+    color: #ccd6f6;
+    text-decoration: none;
+}
+
+.star-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.star-content p {
+    margin-top: 5px;
+    color: #8892b0;
+}
+
+/* Estilos para el ícono dentro de las tarjetas de logros */
+.star-content .globe-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #64ffda;
+}
+
+/* Estilos para el canvas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+/* Botón de cambio de tema */
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 24px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-icon, .dark-icon {
+    position: absolute;
+    transition: opacity 0.3s;
+}
+
+.light-icon {
+    opacity: 0;
+}
+
+body.light-mode .theme-toggle .light-icon {
+    opacity: 1;
+}
+
+body.light-mode .theme-toggle .dark-icon {
+    opacity: 0;
+}
+
+/* Modo claro */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode a {
+    color: #1a73e8;
+}
+
+.light-mode header {
+    background-color: #f8f9fa;
+}
+
+.light-mode .skill-card {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+.light-mode .project-card, .light-mode .star-card {
+    background-color: #ffffff;
+}
+/************NAV-MENU****************/
+.light-mode .nav-menu {
+    background-color: #f8f9fa;
+}
+
+/****************************/
+.light-mode .hero h1 {
+    color: #1a73e8;
+}
+
+.light-mode .hero h2 {
+    color: #333333;
+}
+
+.light-mode .hero h3 {
+    color: #666666;
+}
+
+.light-mode .section-title::before {
+    background-color: #1a73e8;
+}
+
+.light-mode footer {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.light-mode .contact a {
+    border: 1px solid #1a73e8;
+    color: #1a73e8;
+}
+
+.light-mode .contact a:hover {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+/* Mostrar el icono de menú en pantallas pequeñas */
+@media (max-width: 600px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none; /* Oculta los enlaces por defecto */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .nav-links.active {
+        display: flex; /* Muestra los enlaces cuando se activa */
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el icono de menú */
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero h3 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .skill-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .star-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-links li {
+        margin: 10px 0;
+    }
+
+    .theme-toggle {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+
+    .hero h3 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    .project-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .star-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links li {
+        margin: 10px 20px;
+    }
+
+    .skill-card,
+    .project-card {
+        width: 100%; /* Tarjetas ocupan el ancho completo en dispositivos móviles */
+        margin-bottom: 20px;
+    }
+
+    .star-card img {
+        width: 100%; /* Imágenes de tarjetas de logros ocupan el ancho completo */
+        height: auto;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column; /* Alinear íconos de redes sociales en columna */
+        align-items: flex-start;
+    }
+
+    .social-links li {
+        margin: 10px 0; /* Espaciado entre íconos de redes sociales */
+    }
+
+    .theme-toggle {
+        top: 20px;
+        right: 20px; /* Posicionar el botón de cambio de tema */
+    }    
+}
