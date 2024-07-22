@@ -12,16 +12,28 @@
         <div>
             <h1>KR</h1>
         </div>
-        <nav>
-            <a href="mypage.html#init">Welcome</a>
-            <a href="mypage.html#skills">Technical Skills</a>
-            <a href="mypage.html#projects">Proyectos</a>
-            <a href="mypage.html#star">Achievements</a>
-            <a href="D:\Kiara Rodriguez\Resume_web\Kiara_s_Resume.pdf" target="_blank">Resume</a>
-            <a href="mypage.html#contact">Contacto</a>
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html#init">Welcome</a></li>
+                <li><a href="index.html#skills">Technical Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#star">Achievements</a></li>
+                <li><a href="Kiara_s_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span class="light-icon">🌞</span>
+                        <span class="dark-icon">🌜</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-
     <div class="container">
         <section class="blog-post">
             <h2 class="section-title">Proyecto 1: Título del Proyecto</h2>
@@ -40,6 +52,9 @@
                 <p>Aquí puedes escribir las conclusiones de tu proyecto...</p>
             </div>
         </section>
+
+        <!-- Incluye Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </div>
 
     <footer>

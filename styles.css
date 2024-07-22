@@ -3,7 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0a192f;
+    /* background-color: #0a192f;*/
+    background-color: #121212; /* Fondo principal oscuro */
     color: #ccd6f6;
 }
 
@@ -21,7 +22,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #0a192f;
+    /*background-color: #0a192f;
+    background-color: #19191a;*/
+    background-color: #121212; /* Fondo principal oscuro */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -33,14 +36,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #0a192f;
+    /*background-color: #0a192f;*/
+    background-color: #121212; /* Fondo principal oscuro */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .nav-links {
-    display: flex;
+    display: flex;    
     align-items: center;
     list-style-type: none;
     margin: 0;
@@ -52,7 +56,7 @@ header {
 }
 
 .nav-links a {
-    color: #ccd6f6;
+    color: #e0e0e0; /* Enlaces de navegación claros */
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
@@ -60,7 +64,7 @@ header {
 
 .nav-links a:hover {
     text-decoration: underline;
-    color: #64ffda;
+    color: #64ffda; /* Color de enlace al pasar el cursor */
 }
 
 .menu-toggle {
@@ -84,7 +88,7 @@ header {
 }
 
 h1, h2, h3 {
-    color: #ccd6f6;
+    color: #64ffda; /* Títulos de héroe en color de acento */
 }
 
 /* Estilos específicos */
@@ -190,8 +194,12 @@ h1, h2, h3 {
 }
 
 .skill-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #1e1e1e; /* Fondo de tarjetas oscuro */
+    border: 1px solid #333; /* Borde sutil */
+    color: #e0e0e0; /* Texto claro */
+
+    /*background-color: #f9f9f9;
+    border: 1px solid #ddd;*/
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 20px;
@@ -234,12 +242,15 @@ h1, h2, h3 {
 }
 
 .project-card {
-    width: calc(50% - 15px);
+    width: calc(50% - 25px);
     margin-bottom: 30px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    background-color: #101c2d;
+   /* background-color: #101c2d;*/
+    background-color: #1e1e1e; /* Fondo de tarjetas oscuro */
+    border: 1px solid #333; /* Borde sutil */
+    color: #e0e0e0; /* Texto claro */
     border-radius: 12px;
 }
 
@@ -278,7 +289,11 @@ h1, h2, h3 {
 
 /* Estilos para las tarjetas de logro */
 .star-card {
-    background-color: #101c2d;
+    background-color: #1e1e1e; /* Fondo de tarjetas oscuro */
+    border: 1px solid #333; /* Borde sutil */
+    color: #e0e0e0; /* Texto claro */
+
+    /*background-color: #101c2d;*/
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -357,7 +372,8 @@ canvas {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #0a192f;
+    /*background-color: #0a192f;*/
+    background-color: #000000;
     color: #8892b0;
 }
 
@@ -413,7 +429,7 @@ body.light-mode .theme-toggle .dark-icon {
 }
 
 .light-mode header {
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
 }
 
 .light-mode .skill-card {
@@ -424,8 +440,13 @@ body.light-mode .theme-toggle .dark-icon {
 .light-mode .project-card, .light-mode .star-card {
     background-color: #ffffff;
 }
+/************NAV-MENU****************/
+.light-mode .nav-menu {
+    background-color: #f8f9fa;
+}
 
-light-mode .hero h1 {
+/****************************/
+.light-mode .hero h1 {
     color: #1a73e8;
 }
 
@@ -447,13 +468,12 @@ light-mode .hero h1 {
 }
 
 .light-mode .contact a {
-    border: 1px solid #1a73e8;
-    color: #1a73e8;
+   /* border: 1px solid #1a73e8;*/
+    color: #000000;
 }
 
 .light-mode .contact a:hover {
-    background-color: #1a73e8;
-    color: #ffffff;
+    color: #00a2ff;
 }
 
 /* Mostrar el icono de menú en pantallas pequeñas */
