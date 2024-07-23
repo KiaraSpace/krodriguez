@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiara Rodriguez - Electronic Engineering </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <header>
+        <div>
+            <h1>KR</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html#init">Welcome</a></li>
+                <li><a href="index.html#skills">Technical Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#star">Achievements</a></li>
+                <li><a href="Kiara_s_Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span class="light-icon">🌞</span>
+                        <span class="dark-icon">🌜</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="init" class="hero">
+            <h1>Hola, soy</h1>
+            <h2>Kiara Rodriguez.</h2>
+            <h3>Electronic Engineering</h3>
+            <p>Soy apasionada por la tecnología y la innovación. Aquí puedes conocer más sobre mis proyectos y experiencias profesionales.</p>
+        </section>
+
+        <section id="skills" class="skills section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <img src="imag/fpga_icon.png" alt="Icono 1" class="skill-icon">
+                    <img src="imag/verilog.png" alt="Icono 2" class="skill-icon">
+                    <h3>Digital Design</h3>
+                    <p>Verilog, VHDL, DRAM, SRAM, PSRAM.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="imag/tf.png" alt="Icono 8" class="skill-icon">
+                    <img src="imag/keras.png" alt="Icono 9" class="skill-icon">
+                    <img src="imag/opencv.png" alt="Icono 10" class="skill-icon">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Machine Learning, Deep Learning, Computer Vision.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="imag/python.png" alt="Icono 5" class="skill-icon">
+                    <img src="imag/c.png" alt="Icono 6" class="skill-icon">
+                    <img src="imag/eagle.png" alt="Icono 7" class="skill-icon">
+                    <h3>Software & EDA</h3>
+                    <p>C, C++, Python, Matlab, Eagle, Altium.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="imag/arduino.png" alt="Icono 3" class="skill-icon">
+                    <img src="imag/platformio.png" alt="Icono 4" class="skill-icon">
+                    <h3>Embedded Systems</h3>
+                    <p>Arduino, Arduino Nano, Arduino MKR, Seeduino, Esp8260, Teensy 4.1, Tiva TMC129, STM32F40</p>
+                </div> 
+                <!-- Agrega más tarjetas según sea necesario -->
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <h2 class="section-title">Outstanding Projects</h2>
+            <div class="project-cards-container">
+                <div class="project-card">
+                    <a href="proyecto1.html">
+                        <div class="project-content">
+                            <img src="imag/fpga.png" alt="Proyecto 1">
+                            <h3>SRAM, PSRAM programming using Verilog and VHDL</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="proyecto2.html">
+                        <div class="project-content">
+                            <img src="imag/micro.png" alt="Proyecto 2">
+                            <h3>Precise Pulse Generation using FPGA Spartan7 and Tiva129</h3>
+                        </div>
+                    </a>
+                </div>
+                <!-- Agrega más proyectos según sea necesario -->
+            </div>
+        </section>
+
+        <section id="star" class="star section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="star-card">
+                <div class="star-content">
+                    <img src="imag/hackaton_uni.png" alt="Star 0">
+                    <div>
+                        <h3>
+                            <a href="https://www.facebook.com/share/p/mNcJKEpjrgAQxygu/" target="_blank">
+                                We won Third place at I HACKATON DE INNOVACIÓN - National University of Engineering, PE (Sep, 2023)
+                            </a>
+                        </h3>
+                        <p>Neogas Team</p>
+                        <p>We presented a device that could measure the consumption of gas in domestic cylinders.</p>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.facebook.com/share/p/mNcJKEpjrgAQxygu/" target="_blank" class="globe-icon">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="star-card">
+                <div class="star-content">
+                    <img src="imag/Kiara-robot-light.jpg" alt="Star 1">
+                    <div>
+                        <h3>
+                            <a href="https://doiotfieldlab.tudelftcampus.nl/controlling-a-robot-with-light/#" target="_blank">
+                                I am a REPU mentee - Technological University of Delft, NL (Jan, 2023)
+                            </a>
+                        </h3>
+                        <p>REPU CS 2023</p>
+                        <p>REPU is a community who allow undergraduate students to do research at top Universities. I've done my internship at The Networked System Lab in TU DELFT - The Netherlands. My advisors were PhD. Miguel Chavez and Prof. Marco Zuñiga. My research project was related to Visible Light Communication, we developed a robot controlled by the light from a flashlight. I designed the PCB board of the control area and developed all the electronic system.</p>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://doiotfieldlab.tudelftcampus.nl/controlling-a-robot-with-light/#" target="_blank" class="globe-icon">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="star-card">
+                <div class="star-content">
+                    <img src="imag/ArtificioFounding.PNG" alt="Star 2">
+                    <div>
+                        <h3>Artificio Fellowship! (Dec, 2022)</h3>
+                        <p>Thanks to Artificio for the financial support for my internship at TU DELFT and especially to Arturo Deza for being an inspiration for everyone.</p>                  
+                    </div>
+                </div>
+            </div>
+            <div class="star-card">
+                <div class="star-content">
+                    <img src="imag/seeds_huawei.jpg" alt="Star 3">
+                    <div>
+                        <h3>
+                            <a href="https://www.facebook.com/UNIoficial.pe/posts/2010198462523025/?paipv=0&eav=AfYbDS_xNFF7TUix8eizM_w8UgOI4kxYBZZb7gbERkqgylJWZXarNAZdNlYMo4MSkhg&_rdr" target="_blank">
+                                I am a Seed for the Future at HUAWEI! (Nov, 2022)
+                            </a>
+                        </h3>
+                        <p>A week of learning about Artificial Intelligence, 5G and Wireless Communication from Huawei experts. Such an incredible experience, happy to get to know amazing people.</p>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://peru21.pe/cheka/tecnologia/huawei-programa-huawei-celebra-el-programa-local-cultiva-talento-digital-que-busca-reducir-la-brecha-del-talento-tecnologico-noticia/" target="_blank" class="globe-icon">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="star-card">
+                <div class="star-content">
+                    <img src="imag/UAlberta_certificate.jpeg" alt="Star 4">
+                    <div>
+                        <h3>UARE Scholarship - University of Alberta, CA (Jan, 2022)</h3>
+                        <p>I won the UARE scholarship that will cover all the expenses for a three-month research internship at The University of Alberta. I'll work on a project related to Action detection on videos under the supervision of Prof. Li Cheng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <h2 class="section-title">Get in touch!</h2>
+            <p>Networks:</p>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.linkedin.com/in/kiara-rodriguez-bautista/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KiaraSpace" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Kiaramic_?t=Lzq-pL3dxB7juI1OGdnVeg&s=09" title="Twitter" rel="external nofollow noopener" target="_blank">
+                         <!-- <i class="fa-brands fa-twitter"></i>-->
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>            
+                </li>
+                <p>Puedes contactarme a través del siguiente correo:</p>
+                <li>
+                    <a href="mailto:krodriguezb@uni.com">
+                    <i class="fas fa-envelope"></i> krodriguezb@uni.pe</a>
+                </li>
+                <!-- Agrega más redes sociales según sea necesario -->
+            </ul>
+        </section>
+
+        <!-- Incluye Font Awesome -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EWSV51N6WF"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kiara Rodriguez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
