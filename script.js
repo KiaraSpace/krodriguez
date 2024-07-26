@@ -1,7 +1,5 @@
-
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
+    // Configuración del canvas y partículas
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     let particlesArray = [];
@@ -84,9 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     init();
     animate();
-});
 
-document.addEventListener('DOMContentLoaded', (event) => {
+    // Configuración del tema
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
@@ -109,13 +106,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             localStorage.setItem('theme', 'dark-mode');
         }
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    // Configuración del menú de navegación
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-    });
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            // Alternar la clase 'active' en el menú de navegación
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    } else {
+        console.error('No se pudo encontrar el elemento con id="menu-toggle" o ".nav-links".');
+    }
 });

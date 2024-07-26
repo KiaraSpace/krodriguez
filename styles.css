@@ -519,31 +519,53 @@ body.light-mode .theme-toggle .dark-icon {
     .nav-menu {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
     }
 
     .nav-links {
-        display: none; /* Oculta los enlaces por defecto */
+        display: flex; /* Mostrar el menú cuando se activa */
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 20px;
-        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        margin-top: 10px;
+        transition: max-height 0.5s ease, opacity 0.5s ease; /* Transiciones más suaves */
         position: absolute;
         top: 70px; /* Ajusta según la altura del encabezado */
         max-height: 0;
-        opacity: 0;
-        /*overflow: hidden;*/
+        opacity: 20;
+        background-color: #fff; /* Fondo claro */
+        border-radius: 6px; /* Bordes más redondeados */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+        z-index: 100; /* Asegúrate de que esté por encima de otros elementos */
+        overflow: hidden; /* Oculta el contenido fuera del contenedor */
+        box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
     }
 
     .nav-links.active {
-        display: flex; /* Muestra los enlaces cuando se activa */
-        max-height: 300px;
+        max-height: 500px; /* Ajusta según la altura esperada del menú */
         opacity: 1;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        list-style: none; /* Elimina los puntos de lista */
+        margin: 10px 0; /* Espacio vertical entre elementos del menú */
+        width: 100%; /* Asegura que el elemento ocupe todo el ancho del contenedor */
+    }
+    .nav-links a {
+        text-decoration: none; /* Elimina subrayado de enlaces */
+        color: #333; /* Color del texto del enlace */
+        font-size: 16px; /* Tamaño del texto */
+        opacity: 20;
+        font-weight: 200; /* Peso de la fuente para destacar más */
+        display: block; /* Hace que el enlace ocupe todo el ancho disponible */
+        text-align: center; /* Centra el texto dentro del enlace */
+        width: calc(100% - 40px); /* Asegura que el enlace ocupe todo el ancho menos el padding */
+        padding: 6px 5px; /* Espaciado interno para los enlaces */
+        box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+        transition: background-color 0.3s, color 0.3s; /* Transición para los efectos hover */
+    }
+    .nav-links a:hover {
+        background-color: #e0e0e0; /* Fondo al pasar el ratón sobre el enlace */
+        color: #000; /* Color del texto al pasar el ratón */
     }
 
     .menu-toggle {
@@ -585,11 +607,33 @@ body.light-mode .theme-toggle .dark-icon {
         margin-bottom: 20px;
     }
 
-    .star-card img {
+    .star-card {
         width: 100%;
-        height: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
+    .star-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .star-content img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .star-content h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .star-content p {
+        font-size: 16px;
+    }
     .social-links {
         display: flex;
         flex-direction: column;
